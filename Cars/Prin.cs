@@ -2,13 +2,11 @@
 using Vehicle;
 internal class Program
 {
-    internal class Functions
-    {
 
-    }
+   
     private static void Main(string[] args)
     {
-        Functions function = new Functions();
+
         Car Prius = new Car();
         Prius.model = new DateOnly(1997, 02, 11);
         Prius.brand = "Toyota";
@@ -67,7 +65,7 @@ internal class Program
 
 
 
-        //People instances
+
 
         Person person = new Person();
         Person user1 = person.createPerson(001, "Rodrigo", "Santacruz", 21, "Boy");
@@ -80,12 +78,14 @@ internal class Program
 
         Person user5 = person.createPerson(005, "Jesús", "Nolasco", 19, "Boy");
 
-        Person user6 = person.createPerson(006, "Alondra", "GArcía", 30, "Girl");
+        Person user6 = person.createPerson(006, "Alondra", "García", 30, "Girl");
+        Person user7 = person.createPerson(007, "Miguel", "Flores", 30, "Boy");
 
 
 
+         
 
-        //Lincenses instances
+
 
         License license = new License();
         License A09 = license.createLicense("A", new DateOnly(2021, 05, 06), new DateOnly(2022, 05, 06));
@@ -96,13 +96,15 @@ internal class Program
 
         License C10 = license.createLicense("B", new DateOnly(2022, 08, 30), new DateOnly(2023, 12, 25));
 
-        //Entering data
+       
         user2.giveCar(Prius);
         user6.giveCar(Actros);
         user6.giveCar(Ft125);
         user6.giveCar(Sentra);
         user6.giveCar(Taycan);
         user1.giveCar(Fusion);
+        user7.giveCar(Fusion);
+
 
         user1.giveLicense(C10);
         user4.giveLicense(A09);
@@ -112,8 +114,7 @@ internal class Program
         user6.giveLicense(C10);
 
 
-        //Properties
-        //User 1
+
         Console.WriteLine("----------User 1------------");
         person.printUserData(user1);
         user1.printLicenses();

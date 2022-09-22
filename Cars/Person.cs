@@ -258,7 +258,7 @@ namespace Cars
             }
             else
             {
-                Console.WriteLine("\n" + "---------- You don't even have that car -----------" + "\n");
+                Console.WriteLine("\n" + " You don't even have that car " + "\n");
             }
 
 

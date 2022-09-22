@@ -26,9 +26,7 @@ namespace Vehicle
             carPert.type = type;
 
             return carPert;
-        }
-        public void cancelCar()
-        {
+        
 
         }
         
